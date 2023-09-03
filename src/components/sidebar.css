@@ -1,0 +1,58 @@
+/* Sidebar.css */
+
+/* Common styles for all screen sizes */
+.sidebar {
+  width: 250px;
+  background-color: #007bff; /* Blue background color */
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  transition: width 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.sidebar.active {
+  width: 35px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-toggler {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center; /* Center the text and icon vertically */
+}
+
+.sidebar-toggler:focus {
+  outline: none;
+}
+
+i {
+  margin-right: 10px; /* Add a margin to create a gap between the icon and text */
+}
+
+/* Hide all text in the sidebar when it's active */
+.sidebar.active span {
+  font-size: 0;
+}
+
+.sidebar span {
+
+  padding: 5px;
+}

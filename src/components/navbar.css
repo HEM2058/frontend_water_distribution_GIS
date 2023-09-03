@@ -1,0 +1,100 @@
+/* Style the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change the background color as needed */
+    color: white; /* Text color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  }
+  
+  /* Style the left section containing the logos and name */
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the circular logo container */
+  .logo-container {
+    width: 80px; /* Adjust the container width as needed */
+    height: 80px; /* Adjust the container height as needed */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Spacing between logo and name */
+  }
+  
+  /* Style the logo_pmc to overlap the circular shape */
+  .logo-pmc {
+    width: 80px; /* Adjust the logo width as needed */
+    height: 80px; /* Adjust the logo height as needed */
+    background-image: url('../images/logo_pmc.png'); /* Use your logo_pmc image */
+    background-size: cover;
+    border-radius: 50%; /* Make it circular */
+  }
+  
+  /* Style the name */
+  h1 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0;
+  }
+  
+  /* Style the right section containing the login/logout button */
+  .right-section {
+    display: flex; /* Ensure the elements inside the right section are displayed horizontally */
+    align-items: center; /* Center elements vertically */
+    margin-left: 20px; /* Push the button to the right */
+  }
+  
+  /* Style the logout button (you can adjust the styles as needed) */
+  .logout-button {
+    background-color: red; /* Logout button background color */
+    color: white; /* Logout button text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 40px; /* Add spacing between logout button and login/logout button */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  }
+  
+  .logout-button:hover {
+    background-color: #ff0000; /* Logout button background color on hover */
+  }
+  
+  /* Style the login/logout button */
+  button {
+    background-color: #fff; /* Button background color */
+    color: #007bff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  }
+  
+  button:hover {
+    background-color: #e0e0e0; /* Button background color on hover */
+  }
+  
+  /* Media query for screens smaller than 768px (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .header {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+    }
+  
+    .left-section {
+      margin-bottom: 10px; /* Spacing between top and bottom sections */
+    }
+  
+    .right-section {
+      margin-top: 10px; /* Spacing between top and bottom sections */
+    }
+  }
+  
