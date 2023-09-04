@@ -1,12 +1,19 @@
-import React from 'react'; // Make sure to import React if not already imported.
+// App.js
+import React from 'react';
 import './App.css';
-import Navbar from './components/navbar'; // Assuming 'navbar' is the default export of navbar.js
-import Sidebar from './components/sidebar'; // Import the Sidebar component
+import Navbar from './components/navbar';
+import Sidebar from './components/sidebar';
+import OpenLayersMap from './components/map'; // Import the OpenLayersMap component
+
 function App() {
   return (
-    <div>
-      <Navbar /> {/* Use the imported Navbar component like this */}
-      <Sidebar />
+    <div className="app-container">
+      <Navbar />
+      <div className="content-container">
+        <Sidebar />
+        <OpenLayersMap /> {/* Include the OpenLayersMap component */}
+   
+      </div>
     </div>
   );
 }

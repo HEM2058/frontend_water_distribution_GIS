@@ -1,0 +1,51 @@
+/* routing.css */
+
+.routing-input {
+  width: 300px; /* Adjust the width as needed */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-group, .mode-input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.mode-input-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.route-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.route-button:hover {
+  background-color: #0056b3;
+}
